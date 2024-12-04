@@ -1,64 +1,111 @@
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
+    body {
+        font-size: 18px;
+    }
+    h1 {
+        font-size: 2.2em;
+    }
+}
+
+@media (max-width: 1280px) {
     h1 {
         font-size: 2em;
     }
     nav ul {
         justify-content: space-between;
+    }   
+}
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 1.8em;
+    }
+    .mask h2 {
+        font-size: 45px;
+    }
+    .mask p {
+        font-size: 30px;
+    }
+}   
+@media (max-width: 800px) {
+    h1 {
+        font-size: 1.5em;
     }
     nav a {
         font-size: 18px;
-        padding: 8px 10px;
     }
 }
-
 @media (max-width: 768px) {
+    nav .menu-icon {
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+        color: white;
+    }
     nav ul {
         display: none;
         flex-direction: column;
-        position: absolute;
-        top: 150px;
-        left: 0;
-        width: 100px;
-        height: 200px;
+        align-items: center;
         background-color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 120px;
+        width: 25%;
+        left: 0;
     }
     nav ul.show {
         display: flex;
     }
-    nav a {
-        font-size: 18px;
-        text-align: left;
-        padding: 10px;
+    nav ul.active {
+        display: flex;
     }
-    nav .menu-icon {
-        display: block;
-        cursor: pointer;
-        font-size: 25px;
-        color: white;
+    nav ul li {
+        margin: 10px 0;
     }
-    nav a:hover {
-        color: #6a0be7;
+    nav ul li:hover .dropdown {
+        position: static;
+    }
+    .dropdown {
+        position: static;
     }
 }
-
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.8em;
-    }
-    nav a {
-        font-size: 16px;
-        padding: 5px;
-    }
+@media (max-width: 600px) {
     .mask h2 {
-        font-size: 35px;
-        margin-top: 300px;
+        font-size: 40px;
     }
     .mask p {
         font-size: 25px;
     }
+    h1 {
+        font-size: 1.2em;
+    }
+    nav a {
+        font-size: 16px;
+    }
 }
-
-
+@media (max-width: 480px) {
+    .mask h2 {
+        font-size: 35px;
+    }
+    .mask p {
+        font-size: 20px;
+    }
+    nav a {
+        font-size: 14px;
+    }
+}
+@media (max-width: 320px) {
+    .mask h2 {
+        font-size: 30px;
+    }
+    .mask p {
+        font-size: 16px;
+    }
+    nav a {
+        font-size: 12px;
+    }
+    .menu-icon {
+        font-size: 25px;
+    }
+}
 .menu-icon {
     display: none;
     font-size: 30px;
