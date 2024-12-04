@@ -10,7 +10,7 @@
     margin: auto;
     overflow: hidden;
     float: left;
-    margin-left: 200px;
+    margin-left: 70px;
     margin-bottom: 10px;
 }
 img {
@@ -50,7 +50,9 @@ img {
     margin-top: 450px;
     margin-left: 70px;
 }
-
+.about2{
+    margin-left: -100px;
+}
 .skill {
     width: 100%;
     text-align: left;
@@ -135,7 +137,13 @@ img {
 .faq-container {
     width: 80%;
     margin: 20px auto;
+    margin-left: 200px;
     background-color: #f5f5dc;
+    backdrop-filter:blur(30px);
+    border:2px solid rgba(0,0,0,0,8);
+    box-shadow:
+        10px 10px 20px #111,
+        -10px -10px 20px #ddd;
 }
 .faq-container h1 {
     text-align: center;
@@ -160,4 +168,3 @@ img {
     color: #666;
     font-size: 14px;
 }
-
