@@ -12,46 +12,47 @@
     <link rel="stylesheet" href="blog-responsive.css">
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="contact-responsive.css">
+</head>
 <body>
-   <div id="content">
-    <section id="home" class="home">
-        <div class="video-background">
-            <video autoplay muted loop id="background-video">
-                <source src="images/vid.1.mp4" type="video/mp4">
+    <div id="content">
+       <section id="home" class="home">
+          <div class="video-background">
+             <video autoplay muted loop id="background-video">
+                <source src="images/1114844_Man_Hand_1280x720.mp4" type="video/mp4">
                 Your browser does not support the video tag.
-            </video>
-        </div>
-    
-        <header>
-            <div>
-                    <h1 id="typing-effect">Writters Array</h1>
-                   <nav>
-                    <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
-                    <uL>
-                        <li><a href="#home">Home</a></li>
-                        <li>
-                            <a href="#about">About Us</a>
-                            <ul class="dropdown">
-                                <li><a href="#faq">FAQ</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#services">Services</a>
-                            <ul class="dropdown">
-                                <li><a href="#blog">Blog</a></li> 
-                            </ul>
-                        </li>
-                        <li><a href="#contact">Contact</a><li>
-                    </ul>
-                   </nav>
-                </div>
-        </header>
-
-        <content class="mask">
-            <h2>WELCOME</h2>
-            <p>Thank U For Choosing us</p>
-        </content> 
-    </section><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+             </video>
+          </div>
+ 
+          <header>
+             <div>
+                <h1 id="typing-effect">Writers Array</h1>
+                <nav>
+                   <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+                   <ul class="nav-list">
+                      <li><a href="#home" class="nav-icon">Home</a></li>
+                      <li>
+                         <a href="#about" class="nav-icon">About Us</a>
+                         <ul class="dropdown">
+                            <li><a href="#faq">FAQ</a></li>
+                         </ul>
+                      </li>
+                      <li>
+                         <a href="#services" class="nav-icon">Services</a>
+                         <ul class="dropdown">
+                            <li><a href="#blog">Blog</a></li>
+                         </ul>
+                      </li>
+                      <li><a href="#contact" class="nav-icon">Contact</a></li>
+                   </ul>
+                </nav>
+             </div>
+          </header>
+ 
+          <div class="mask">
+             <h2>WELCOME</h2>
+             <p>Thank You For Choosing Us</p>
+          </div>
+       </section><br><br><br><br><br>
    <section id="about" class="about-section">
     <content>
        <div  class="about">
@@ -75,7 +76,7 @@
             <p>It is an amazng  website with great features <br> that offers an incredible experience.
               <br>We can easily adapt,make changes according to your needs</p>
               
-        </div><br><br>
+        </div>
         <div class="about2">
             <div class="container" style="width: 900px;">
                 <div class="skill">
@@ -188,27 +189,27 @@
         <h2 style="color:black; text-align: center; font-size: 45px">Blogs</h2>
         <div class="image-container">
             <div class="card">
-                <img src="images/img5.jpg" alt="Wine Bottles">
-                <h3>Where Do You Learn HTML & CSS in 2019?</h3>
-                <div class="meta">Ham Brook · Jan 18, 2019 · News</div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis...</p>
+                <img src="images/img5.jpg" alt="Desert Cakes">
+                <h3>Top 10 Deserts you must try.</h3>
+                <div class="meta">Tony .Sep 10,2024</div>
+                <p>This are the top ten deserts that are to die for and you must try.<br>This receipe should be added to your cooking book...</p>
                 <a href="#">Continue Reading...</a>
             </div>
     
         
             <div class="card">
-                <img src="images/img7.jpg" alt="Chair and Basket">
-                <h3>Where Do You Learn HTML & CSS in 2019?</h3>
-                <div class="meta">James Phelps · Jan 18, 2019 · News</div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis...</p>
+                <img src="images/img7.jpg" alt="Man eating an apple">
+                <h3>Vegetables and fruits will literally save your life.</h3>
+                <div class="meta">Tony .Jun 10,2024</div>
+                <p>Today we are going to discuss different fruits and vegetables and their value to the human body... </p>
                 <a href="#">Continue Reading...</a>
             </div>
     
             <div class="card">
-                <img src="images/img12.jpg" alt="Man in White">
-                <h3>Where Do You Learn HTML & CSS in 2019?</h3>
-                <div class="meta">James Phelps · Jan 18, 2019 · News</div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis...</p>
+                <img src="images/img12.jpg" alt="A Car">
+                <h3>Most expensive cars in the world</h3>
+                <div class="meta">Tony .Nov 10,2024</div>
+                <p>Every persons dream is to own a car.Through out this i`m going to show you different models of cars and their prices...</p>
                 <a href="#">Continue Reading...</a>
             </div>
         </div>
@@ -234,11 +235,11 @@
             </div>
         </div>
         <div class="container" style="margin-left: 80px;">
-            <form action="" method="POST"> 
+            <form action="" method="POST" onsubmit="event.preventDefault(); SendMail();"> 
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="firstName">First Name</label>
-                        <input type="text" id="firstName" name="firstname" style="width:490px;" required>
+                        <label for="fullname">First Name</label>
+                        <input type="text" id="fullname" name="firstname" style="width:490px;" required>
                     </div>
                     <div class="form-group">
                         <label for="lastName">Last Name</label>
@@ -246,8 +247,8 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required> 
+                    <label for="email_id">Email</label>
+                    <input type="email" id="email_id" name="email" required> 
                 </div>
                 <div class="form-group">
                     <label for="subject">Subject</label>
@@ -263,6 +264,16 @@
         </div>
     </div>     
     </section>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "ahkR8915VCWQtUyLW",
+            });
+        })();
+    </script>
     <footer style="background-color: #2C2C2C; color: #fff; padding: 40px 0;">
         <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
         <div>
@@ -293,11 +304,10 @@
         </div>
         
         <div style="text-align: center; padding-top: 20px; border-top: 1px solid #444;">
-        <p style="margin: 0;"><span style="color: red;"></span>&copy; 2024 Writers Array. All rights reserved.<a href="" style="color: #fff; text-decoration: none;"></a></p>
+            <p style="margin: 0;"><span style="color: red;"></span>&copy; 2024 Writers Array. All rights reserved.<a href="" style="color: #fff; text-decoration: none;"></a></p>
         </div>
     </footer>
 
  <script src="script.js"></script>
  </body>
 </html>
-        
